@@ -67,6 +67,8 @@ npm run build
 
 Address any failing check before opening or merging a pull request.
 
+The `typecheck` script runs `next typegen` before TypeScript. Next.js generates route-aware types such as `LayoutProps` during type generation; the workflow runs this step before `tsc --noEmit` on a clean runner.
+
 ### Run GitHub Actions manually
 
 1. Push the branch to GitHub.
